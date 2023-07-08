@@ -37,3 +37,4 @@ jobs:
         makeLatest: false
         prerelease: true
         replacesArtifacts: true
+        allowUpdates: true
