@@ -30,6 +30,7 @@ jobs:
 
     - uses: ncipollo/release-action@v1
       with:
+        tag: ${{ github.ref_name }}
         commit: ${{ github.ref_name }}
         generateReleaseNotes: true
         artifacts: "build/ui-bundle-dev.zip"
