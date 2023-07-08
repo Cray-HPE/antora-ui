@@ -31,3 +31,5 @@ jobs:
         generateReleaseNotes: true
         artifacts: "build/ui-bundle.zip"
         makeLatest: true
+        prerelease: false
+        replacesArtifacts: true
