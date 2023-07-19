@@ -32,10 +32,10 @@ Here's a file tree that shows the location of these new files:
 ....
 src/
   static/
+    favicon.ico
+    favicon.png
     notice.txt
   .DS_Store
-  favicon.ico
-  favicon.png
 ....
 
 Let's now consider how the static files flow from the UI project to the published site.
@@ -73,9 +73,9 @@ img/
 js/
   site.js
 static/
+  favicon.ico
+  favicon.png
   notice.txt
-favicon.ico
-favicon.png
 ....
 
 Notice the absence of the [.path]_.DS_Store_ file, which is hidden.
@@ -98,9 +98,9 @@ _/
   js/
     site.js
   static/
+    favicon.ico
+    favicon.png
     about.txt
-  favicon.ico
-  favicon.png
 component-a/
   ...
 sitemap.xml
