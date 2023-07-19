@@ -1,0 +1,8 @@
+static_files:
+- android-chrome-*
+- apple-touch-icon.png
+- browserconfig.xml
+- favicon*
+- mstile-*
+- safari-*
+- site.webmanifest
