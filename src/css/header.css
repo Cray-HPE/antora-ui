@@ -53,6 +53,18 @@ body {
   justify-content: flex-end;
 }
 
+.navbar-brand .navbar-item.navbar-logo {
+  align-items: center;
+  flex-shrink: 0;
+  display: flex;
+}
+
+.navbar-brand .navbar-logo img {
+  width: auto;
+  height: 1.5rem;
+  z-index: 10;
+}
+
 #search-input {
   color: #333;
   font-family: inherit;
