@@ -1,9 +1,6 @@
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <a href="." title="{{site.title}}" class="navbar-item navbar-logo">
-        <img src="{{{uiRootPath}}}/img/hpe_pri_wht_rev_rgb.png" alt="logo" class='navbar-logo'>
-      </a>
       <a class="navbar-item" href="{{{or site.url siteRootPath}}}">{{site.title}}</a>
       {{#if env.SITE_SEARCH_PROVIDER}}
       <div class="navbar-item search hide-for-print">
@@ -20,7 +17,7 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="#">Home</a>
+        <a class="navbar-item" href="{{{or site.url siteRootPath}}}">Home</a>
 <!--         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="#">Products</a>
           <div class="navbar-dropdown">
@@ -39,7 +36,7 @@
         </div> -->
         <div class="navbar-item">
           <span class="control">
-            <a class="button is-primary" href="#">Download</a>
+            <a class="button is-primary" href="{{page.component.name}}.pdf" target="_blank" download>Download</a>
           </span>
         </div>
       </div>
