@@ -1,1 +1,19 @@
-{{!-- Add header scripts here --}}
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="https://jira-pro.it.hpe.com:8443/plugins/servlet/issueCollectorBootstrap.js?collectorId=e49dd2fa&locale=en_US"></script>
+<script type="text/javascript">
+window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
+
+  // ==== custom trigger function ====
+  triggerFunction: function (showCollectorDialog) {
+    $('#feedback-button').on('click', function (e) {
+      e.preventDefault()
+      showCollectorDialog()
+    })
+  },
+  fieldValues: {
+    // By default, record web info in order to grab the page, doc-version, and the section (if in the URL).
+    recordWebInfo: '1', // field Name
+    recordWebInfoConsent: ['1'] // field id
+  }
+})
+</script>
